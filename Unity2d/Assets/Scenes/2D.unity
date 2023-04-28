@@ -1593,7 +1593,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8984632693b66be4492a3e2e2829a478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 64242590817057603, guid: ac7dde7b382f0004489243c89b926c75, type: 3}
+  enemyPrefab: {fileID: 6521341261462472724, guid: 11c52ee51e746c548b7ef7674bb69cc6, type: 3}
+  enemyClone: {fileID: 0}
+  enemyArray:
+  - {fileID: 64242590817057603, guid: ac7dde7b382f0004489243c89b926c75, type: 3}
+  - {fileID: 4441822487462995218, guid: 344ca87adb531414c931b0454f1a3907, type: 3}
+  - {fileID: 6521341261462472724, guid: 11c52ee51e746c548b7ef7674bb69cc6, type: 3}
+  enemyList: []
 --- !u!4 &1639651407
 Transform:
   m_ObjectHideFlags: 0

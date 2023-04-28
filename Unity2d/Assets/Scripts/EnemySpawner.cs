@@ -7,6 +7,9 @@ public class EnemySpawner : MonoBehaviour
     #region CLASS_VARIABLES
 
     public GameObject enemyPrefab;
+    public GameObject enemyClone;
+    public GameObject[] enemyArray;
+    public List<GameObject> enemyList;
 
     #endregion
 
@@ -23,7 +26,11 @@ public class EnemySpawner : MonoBehaviour
 
     public void SpawnEnemy()
     {
-        Instantiate(enemyPrefab, this.transform.position, this.transform.rotation);
+        foreach (GameObject enemy in enemyArray)
+        {
+            Instantiate(enemy, transform.position, transform.rotation);
+        }
+        
     }
 
     #endregion
