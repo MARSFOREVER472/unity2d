@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3763942993523545185}
   m_Layer: 0
   m_Name: EnemyB
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ddd854ebadcdf4d901a4627124ee33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
+  playerObject: {fileID: 0}
+  playerTag: Player
   damagePoints: 5
 --- !u!114 &3763942993523545185
 MonoBehaviour:
