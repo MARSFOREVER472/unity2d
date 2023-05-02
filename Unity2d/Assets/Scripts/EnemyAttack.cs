@@ -7,6 +7,8 @@ public class EnemyAttack : MonoBehaviour
     #region CLASS_VARIABLES
 
     public PlayerHealth playerHealth;
+    public GameObject playerObject;
+    public string playerTag;
 
     public int damagePoints = 1;
 
@@ -33,6 +35,8 @@ public class EnemyAttack : MonoBehaviour
 
     public void DealDamage()
     {
+        playerObject = GameObject.FindGameObjectWithTag(playerTag);
+        PlayerHealth playerHealth = playerObject.GetComponent<PlayerHealth>();
         playerHealth.TakeDamage(damagePoints);
     }
 

@@ -2123,6 +2123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 0}
+  playerObject: {fileID: 0}
+  playerTag: 
   damagePoints: 5
 --- !u!1001 &8210923807659852628
 PrefabInstance:
@@ -2212,6 +2214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 0}
+  playerObject: {fileID: 0}
+  playerTag: 
   damagePoints: 1
 --- !u!1001 &8384670612643974149
 PrefabInstance:
@@ -2288,6 +2292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 8384670612643974152}
+  playerObject: {fileID: 0}
+  playerTag: 
   damagePoints: 1
 --- !u!114 &8384670612643974152
 MonoBehaviour:
