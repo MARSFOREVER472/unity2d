@@ -15,9 +15,19 @@ public class EnemySpawner : MonoBehaviour
 
     #region UNITY_METHODS
 
-    private void Awake()
+    private void OnEnable()
+    {
+        // SpawnEnemy();
+    }
+
+    private void OnDisable()
     {
         SpawnEnemy();
+    }
+
+    private void Start()
+    {
+        // SpawnEnemy();
     }
 
     #endregion

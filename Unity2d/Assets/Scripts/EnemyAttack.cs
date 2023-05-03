@@ -16,6 +16,11 @@ public class EnemyAttack : MonoBehaviour
 
     #region UNITY_METHODS
 
+    private void Awake()
+    {
+        
+    }
+
     private void Update()
     {
         PlayerInputs();
@@ -24,6 +29,12 @@ public class EnemyAttack : MonoBehaviour
     #endregion
 
     #region CLASS_METHODS
+
+    private void Initialization()
+    {
+        playerObject = GameObject.FindGameObjectWithTag(playerTag);
+
+    }
 
     public void PlayerInputs()
     {
@@ -35,7 +46,6 @@ public class EnemyAttack : MonoBehaviour
 
     public void DealDamage()
     {
-        playerObject = GameObject.FindGameObjectWithTag(playerTag);
         PlayerHealth playerHealth = playerObject.GetComponent<PlayerHealth>();
         playerHealth.TakeDamage(damagePoints);
     }
