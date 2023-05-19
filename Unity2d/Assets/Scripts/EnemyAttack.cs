@@ -7,12 +7,19 @@ public class EnemyAttack : MonoBehaviour
     #region CLASS_VARIABLES
 
     public PlayerHealth playerHealth;
+    public GameObject playerObject;
+    public string playerTag;
 
     public int damagePoints = 1;
 
     #endregion
 
     #region UNITY_METHODS
+
+    private void Awake()
+    {
+        
+    }
 
     private void Update()
     {
@@ -22,6 +29,12 @@ public class EnemyAttack : MonoBehaviour
     #endregion
 
     #region CLASS_METHODS
+
+    private void Initialization()
+    {
+        playerObject = GameObject.FindGameObjectWithTag(playerTag);
+
+    }
 
     public void PlayerInputs()
     {
@@ -33,6 +46,7 @@ public class EnemyAttack : MonoBehaviour
 
     public void DealDamage()
     {
+        PlayerHealth playerHealth = playerObject.GetComponent<PlayerHealth>();
         playerHealth.TakeDamage(damagePoints);
     }
 

@@ -1576,7 +1576,7 @@ GameObject:
   - component: {fileID: 1639651406}
   m_Layer: 0
   m_Name: EnemySpawner
-  m_TagString: Untagged
+  m_TagString: EnemyA
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2123,6 +2123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 0}
+  playerObject: {fileID: 0}
+  playerTag: 
   damagePoints: 5
 --- !u!1001 &8210923807659852628
 PrefabInstance:
@@ -2212,6 +2214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 0}
+  playerObject: {fileID: 0}
+  playerTag: 
   damagePoints: 1
 --- !u!1001 &8384670612643974149
 PrefabInstance:
@@ -2288,6 +2292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 8384670612643974152}
+  playerObject: {fileID: 0}
+  playerTag: 
   damagePoints: 1
 --- !u!114 &8384670612643974152
 MonoBehaviour:
@@ -2356,6 +2362,10 @@ PrefabInstance:
     - target: {fileID: 8660994701783252191, guid: 25938f88ba65b5c4db1d75614ff0d594, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660994701783252191, guid: 25938f88ba65b5c4db1d75614ff0d594, type: 3}
+      propertyPath: m_TagString
+      value: EnemyA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25938f88ba65b5c4db1d75614ff0d594, type: 3}
